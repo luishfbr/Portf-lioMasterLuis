@@ -1,0 +1,152 @@
+.card-project {
+  width: 20.5rem;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: 6px;
+
+  overflow: hidden;
+  border: 1px solid rgb(42, 42, 42);
+  background-color: rgb(19, 19, 19);
+  transition: all ease-in-out .3s;
+}
+
+.card-project:hover {
+  transform: scale(1.02,1.02);
+}
+
+.shadow-vertical {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #111 2%, transparent 90%)
+  
+}
+
+.thumb {
+
+  position:relative
+}
+
+.thumb img {
+  border-radius: 6px;
+  
+  width: 100%;
+  height: 13rem;
+    
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.about-project {
+  align-items: center;
+  padding: 0px 2rem;
+  display: block;
+  
+  flex-direction: column;
+  
+}
+
+.title {
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+  height: 10%;
+}
+
+.title h1 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+.btns {
+  position: relative;
+  top: 1rem;
+  left: 6.5rem;
+}
+
+.button  svg {
+  color: rgb(255, 255, 255);
+  height: 20px; 
+}
+
+.button a {
+  
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  padding: 7px 25px;
+  border-radius: 7px;
+  border: 1px solid rgb(255, 241, 47);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.button a:hover {
+  background: rgb(255, 241, 47);
+  box-shadow: 0 0 30px 5px rgba(255, 241, 47, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: black;
+}
+
+.button a:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+/* Media Queries */
+
+@media(max-width: 640px) {
+  .thumb img { width:280px;
+    height: 110px}
+   .card-project {
+    width: 102%;
+    height: 100%;
+   } 
+  }
+@media(max-width: 600px) {
+  .thumb img { width:220px;
+    height: 110px}
+   .card-project {
+    width: 220px;
+    height: 100%;
+   } 
+   .button a {
+    padding: 1px 5px;
+   }
+   
+}
+
+@media(max-width: 500px) {
+  .thumb img { width:180px;
+    height: 110px}
+   .card-project {
+    width: 180px;
+    height: 100%;
+    
+   } 
+   .button a {
+    font-size: 12px;
+    padding: 1px 2px;
+   
+   }
+   
+   
+}
